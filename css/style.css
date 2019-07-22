@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*fonts*/
+
+
+
+
+/*font*/
+body{
+/*	font-family: 'Segoe Pro Regular';*/
+	color: white !important;
+}
+*{
+	transition-duration: .8s;
+}
+
+
+h2{
+	font-size: 60px;
+	
+	font-weight: 600;
+/*	font-family="SegoeUI-Semibold, Segoe UI"*/
+	text-align: right;
+		
+
+}
+.skills-container{
+	display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.skill{
+	background: #FEF1E7;
+	color: #F67615;
+	padding-left:20
+	
+	
+}
+.paragraph{
+	color: white;
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+}
+.cell{
+	margin-right: 5px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-size: 13px;
+}
+.intrests{
+	background: #E8E8E8;
+	color: #595A5C;
+}
+.primary-color{
+	color: #F67615;
+}
+.secondary-color{
+	color: #595A5C;
+}
+.line{
+	height: 5px;
+}
+.bg-sec{
+	background: #F67615;
+}
+.the-title{
+	font-size: 14px;
+}
+.the-row{
+	
+    width: 100%;
+    
+}
+.the-container{
+	min-height: 100vh;
+    display: flex;
+    
+	background:#F67615 url("img/circularbg2.svg") no-repeat right top;
+	background-size: 100% 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+.profile-container{
+	    width: 100%;
+    height: 300px;
+    /* width: 200px; */
+	position: relative;
+}
+.profile-container img{
+	height: 100%;
+	border-radius: 50%;
+	box-shadow:  0px 20px 44px -12px rgba(246, 118, 21, 0.35);
+}
+.profile-container:after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 120%;
+	border: 2px solid orange;
+	display: block;
+	width: auto;
+	border-radius: 50%;
+	
+}
+
+
+.the-form{
+	background: rgba(255, 255, 255, 20%);
+    color: white;
+    font-size: 14px;
+}
+
+form textarea, input{
+	padding: 7px 15px;
+    fill: rgba(255,255,255,0.071);    
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 64%);
+    color: #595a5c;
+}
+
+.prof-img label, .prof-img .the-camera-icon{
+	width: 200px;
+    height: 200px;
+	background: rgba(255, 255, 255, 20%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+	flex-flow: column;
+}
+
+.prof-img .the-camera-icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.the-camera-icon svg{
+	width: 80px;
+    height: 80px;
+    opacity: 50%;
+    stroke-width: 1px;
+    opacity: 0.5;
+	transition-duration: .8s;
+}
+
+.prof-img label:hover svg{
+	opacity: 1;
+	transition-duration: .8s;
+}
+
+
+.greetings-img img{
+	vertical-align: middle;
+    border-style: none;
+    height: 110%;
+    position: fixed;
+    left: -5%;
+    top: 1%;
+}
+.form-container input[type="button"]{
+	background: none;
+    color: white;
+	position: relative;
+	overflow: hidden;
+}
+.form-container input[type="button"]:hover{
+	color: white;
+	
+	border-color:#595A5C;
+}
+
+.form-container input[type="button"]::before{
+	position: absolute;
+	content: "";
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 0%;
+	background: #595A5C;
+	border-radius: 0 0 50% 50%;
+	top: 0;
+		
+}
+
+.form-container input[type="button"]:hover::before{
+	height: 180%;
+}
+
+@media(max-width:776px)
+{
+	.profile-container {
+    width: 100%;
+    height: 150px;
+    /* width: 200px; */
+    position: relative;
+    margin-bottom: 60px;
+}
+	h2 {
+    font-size: 34px;
+    color: #595a5c;
+    font-weight: 600;
+}
+	.the-row{
+		padding: 15px;
+	}
+	
+}
+@media(max-width:990px){
+	.profile-container {
+    width: 100%;
+    height: 180px;
+    
+}
+	
+}
