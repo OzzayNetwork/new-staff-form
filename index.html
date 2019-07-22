@@ -1,97 +1,99 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>New staff member</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	 <link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
 
-<body>
-	<section class="container-fluid the-container p-5">
-		<div class="row the-row">
-			<div class="col-lg-6 greet-img h-100">
-				<div class="prof-img">
-					<label class="the-img" for="my-picture">
+	<head>
+		<meta charset="utf-8">
+		<title>New staff member</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<section class="container-fluid the-container p-5">
+			<div class="row the-row">
+				<div class="col-lg-6 greet-img h-100">
+					<div class="prof-img">
+						<label class="the-img" for="my-picture">
 						<div class="the-camera-icon">
 							<i data-feather="camera"></i>
 							<p class="text-capitalize">upload your picture</p>
-						</div>					
+						</div>
 					</label>
+					</div>
+					<div class="greetings-img h-75">
+						<img src="css/img/bg.svg">
+					</div>
 				</div>
-				<div class="greetings-img h-75">
-					<img src="css/img/bg.svg">
-				</div>
-			</div>
-			<div class="col-lg-6 form-container">
-				<div class="title-container">
-					<h2 class="text-capitalize">Welcome abord</h2>
-					<p class="paragraph">Hello there,  We at Nouveta LTD would love to welcome you into the Veta family. With that being said, we would love to know some professional & fun facts about you.  Kindly feel the form bellow completely and correctly. Feel at home. Welcome once more</p>
-					<div class="the-form p-5">
-						<form>
-							<div class="row">
-								<div class="form-group col-12 m-0 p-0 d-flex">
-									<div class="col-lg-7 d-flex flex-column">
-										<label>Your Names</label>
-										<input type="text" placeholder="Enter your official names" autofocus class="">
+				<div class="col-lg-6 form-container">
+					<div class="title-container">
+						<h2 class="text-capitalize">Welcome abord</h2>
+						<p class="paragraph">Hello there, We at Nouveta LTD would love to welcome you into the Veta family. With that being said, we would love to know some professional & fun facts about you. Kindly feel the form bellow completely and correctly. Feel at home. Welcome once
+							more
+						</p>
+						<div class="the-form p-5">
+							<form>
+								<div class="row">
+									<div class="form-group col-12 m-0 p-0 d-flex">
+										<div class="col-lg-7 d-flex flex-column">
+											<label>Your Names</label>
+											<input type="text" placeholder="Enter your official names" autofocus class="">
+										</div>
+										<div class="col-lg-5 d-flex flex-column">
+											<label>Your Alias/Nickname</label>
+											<input type="text" placeholder="Enter your AKA" class="">
+										</div>
 									</div>
-									<div class="col-lg-5 d-flex flex-column">
-										<label>Your Alias/Nickname</label>
-										<input type="text" placeholder="Enter your AKA" class="">
+
+									<div class="col-12  d-flex flex-column">
+										<label>Tell us something brief about yourself</label>
+										<textarea rows="4" cols="50" name="comment" form="usrform" placeholder="About Me ..."></textarea>
+									</div>
+
+									<div class="col-12  d-flex flex-column">
+										<label>What's Unique About You?</label>
+										<textarea rows="3" cols="50" name="comment" form="usrform" placeholder="Unique fact about me ..."></textarea>
+									</div>
+
+									<div class="col-12  d-flex flex-column mb-2">
+										<label>What's Interesting About You?</label>
+										<textarea rows="3" cols="50" name="comment" form="usrform" placeholder="Interesting fact about me ..."></textarea>
+									</div>
+
+									<div class="col-12">
+										<p>For this section, enter at least three skills and at lead four items on the interests and hobbies section. remember to press enter once you are done with entering an item into the text box. </p>
+									</div>
+
+									<div class="col-12  d-flex flex-column mb-2">
+										<label>My Skills</label>
+										<input type="text" placeholder="Press Enter after feeding in a skill">
+									</div>
+
+									<div class="col-12  d-flex flex-column mb-2">
+										<label>Interests and Hobbies</label>
+										<input type="text" placeholder="Press Enter after feeding in a hobby or skill">
+										<input type="file" id="my-picture" class="d-none">
+									</div>
+									<div class="col-12 d-flex flex-column mb-2 mt-3">
+										<button class="btn btn2">SUBMIT</button>
 									</div>
 								</div>
-								
-								<div class="col-12  d-flex flex-column">
-									<label>Tell us something brief about yourself</label>								
-									<textarea rows="4" cols="50" name="comment" form="usrform" placeholder="About Me ..."></textarea>
-								</div>
-								
-								<div class="col-12  d-flex flex-column">
-									<label>What's Unique About You?</label>								
-									<textarea rows="3" cols="50" name="comment" form="usrform" placeholder="Unique fact about me ..."></textarea>
-								</div>
-								
-								<div class="col-12  d-flex flex-column mb-2">
-									<label>What's Interesting About You?</label>								
-									<textarea rows="3" cols="50" name="comment" form="usrform" placeholder="Interesting fact about me ..."></textarea>
-								</div>
-								
-								<div class="col-12">
-									<p>For this section, enter at least three skills and at lead four items on the interests and hobbies section. remember to press enter once you are done with entering an item into the text box. </p>
-								</div>
-								
-								<div class="col-12  d-flex flex-column mb-2">
-									<label>My Skills</label>								
-									<input type="text" placeholder="Press Enter after feeding in a skill">
-								</div>
-								
-								<div class="col-12  d-flex flex-column mb-2">
-									<label>Interests and Hobbies</label>								
-									<input type="text" placeholder="Press Enter after feeding in a hobby or skill">
-									<input type="file" id="my-picture" class="d-none">
-								</div>
-								
-								<div class="col-12 d-flex flex-column mb-2 mt-3">
-									<input type="button" value="submit" class="text-uppercase">
-								</div>
-								
-							</div>
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	
-<!--	script-->
-	
-	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-	<script>
-      feather.replace()
-    </script>
-<!--	script-->
-</body>
+		</section>
+
+		<!--	script-->
+
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			feather.replace()
+		</script>
+		<!--	script-->
+	</body>
+
 </html>
