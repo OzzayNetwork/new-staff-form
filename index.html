@@ -1,95 +1,89 @@
 <!doctype html>
 <html>
+<head>
+<meta charset="utf-8">
+<title>New staff member</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
 
-	<head>
-		<meta charset="utf-8">
-		<title>New staff member</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="stylesheet" href="css/materialize.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-	</head>
+<body>
+<section class="container-fluid the-container p-5">
+  <div class="row the-row">
+    <div class="col-12 col-md-3 col-lg-4 col-xl-6 greet-img h-100">
+      <div class="prof-img">
+        <label class="the-img" for="my-picture">
+        <img src="#" id="prof-picture" class="">
+        <div class="the-camera-icon"> <i data-feather="camera"></i>
+          <p class="text-capitalize">upload your picture</p>
+        </div>
+        </label>
+      </div>
+      <div class="greetings-img h-75"> <img src="css/img/bg.svg"> </div>
+    </div>
+    <div class="col-12 col-md-9 col-lg-8 col-xl-6 form-container">
+      <div class="title-container">
+        <h2 class="text-capitalize">Welcome aboard</h2>
+        <p class="paragraph">Hi! We at Nouveta LTD would love to welcome you into the Veta family. With that being said, we would love to know some professional &amp; fun facts about you. Kindly fill the form below. Feel at home and welcome once again. </p>
+        <div class="the-form p-md-5 px-5">
+          <form>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <label>Your Names</label>
+                <input type="text" placeholder="What are your official names?" autofocus class="form-control">
+              </div>
+              <div class="col-12 col-md-6">
+                <label>Your Alias/Nickname</label>
+                <input type="text" placeholder="What other name(s) do you go by?" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <label>Tell us something small about yourself</label>
+                <textarea rows="4" cols="50" name="comment" form="usrform" class="form-control" placeholder="About Me ..."></textarea>
+              </div>
+              <div class="col-12">
+                <label>What is something unique about you?</label>
+                <textarea rows="3" cols="50" name="comment" form="usrform" class="form-control" placeholder="Unique fact about me ..."></textarea>
+              </div>
+              <div class="col-12 mb-2">
+                <label>What are some interesting facts about you?</label>
+                <textarea rows="3" cols="50" name="comment" form="usrform" class="form-control" placeholder="Interesting fact about me ..."></textarea>
+              </div>
+              <div class="col-12">
+                <p>For this section, enter at least three skills and at lead four items on the interests and hobbies section. remember to press enter once you are done with entering an item into the text box. </p>
+              </div>
+              <div class="col-12 mb-2">
+                <label>My Skills</label>
+                <div class="chips chips-placeholder-skills"></div>
+              </div>
+              <div class="col-12 mb-2">
+                <label>Interests and Hobbies</label>
+                <div class="chips chips-placeholder"></div>
+                <input type="file" id="my-picture" class="d-none" onChange="showimage.call(this)">
+              </div>
+              <div class="col-12 d-flex flex-column mb-2 mt-3">
+                <button class="btn2">SUBMIT</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<body>
-		<section class="container-fluid the-container p-5">
-			<div class="row the-row">
-				<div class="col-12 col-md-3 col-lg-4 col-xl-6 greet-img h-100">
-					<div class="prof-img">
-						<label class="the-img" for="my-picture">
-							<div class="the-camera-icon">
-								<i data-feather="camera"></i>
-								<p class="text-capitalize">upload your picture</p>
-							</div>
-						</label>
-					</div>
-					<div class="greetings-img h-75">
-						<img src="css/img/bg.svg">
-					</div>
-				</div>
-				<div class="col-12 col-md-9 col-lg-8 col-xl-6 form-container">
-					<div class="title-container">
-						<h2 class="text-capitalize">Welcome aboard</h2>
-						<p class="paragraph">Hi! We at Nouveta LTD would love to welcome you into the Veta family. With that being said, we would love to know some professional &amp; fun facts about you. Kindly fill the form below. Feel at home and welcome once again.
-						</p>
-						<div class="the-form p-md-5 px-5">
-							<form>
-								<div class="row">
-									<div class="col-12 col-md-6">
-										<label>Your Names</label>
-										<input type="text" placeholder="What are your official names?" autofocus class="form-control">
-									</div>
-									<div class="col-12 col-md-6">
-										<label>Your Alias/Nickname</label>
-										<input type="text" placeholder="What other name(s) do you go by?" class="form-control">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<label>Tell us something small about yourself</label>
-										<textarea rows="4" cols="50" name="comment" form="usrform" class="form-control" placeholder="About Me ..."></textarea>
-									</div>
+<!--	script--> 
 
-									<div class="col-12">
-										<label>What is something unique about you?</label>
-										<textarea rows="3" cols="50" name="comment" form="usrform" class="form-control" placeholder="Unique fact about me ..."></textarea>
-									</div>
-									<div class="col-12 mb-2">
-										<label>What are some interesting facts about you?</label>
-										<textarea rows="3" cols="50" name="comment" form="usrform" class="form-control" placeholder="Interesting fact about me ..."></textarea>
-									</div>
-									<div class="col-12">
-										<p>For this section, enter at least three skills and at lead four items on the interests and hobbies section. remember to press enter once you are done with entering an item into the text box. </p>
-									</div>
-									<div class="col-12 mb-2">
-										<label>My Skills</label>
-										<div class="chips chips-placeholder-skills"></div>
-									</div>
-									<div class="col-12 mb-2">
-										<label>Interests and Hobbies</label>
-										<div class="chips chips-placeholder"></div>
-										<input type="file" id="my-picture" class="d-none">
-									</div>
-									<div class="col-12 d-flex flex-column mb-2 mt-3">
-										<button class="btn2">SUBMIT</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!--	script-->
-
-
-		<script>
+<script>
 			feather.replace()
 			$('.chips').chips();
 			$('.chips-placeholder-skills').chips({
@@ -100,8 +94,22 @@
 				placeholder: 'Enter a hobby',
 				secondaryPlaceholder: '+ Hobby',
 			});
-		</script>
-		<!--	script-->
-	</body>
+		</script> 
+<!--	script--> 
 
+<script>
+function showimage(){
+if(this.files && this.files[0]){
+var obj=new FileReader();
+obj.onload=function(data){
+var image=document.getElementById("prof-picture");
+image.src=data.target.result;
+	image.style.display="block";
+}
+obj.readAsDataURL(this.files[0]);
+}
+}
+
+</script>
+</body>
 </html>

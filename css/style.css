@@ -176,6 +176,7 @@ textarea.form-control:focus, input.form-control:focus, .chips:focus {
   z-index: 100;
   cursor: pointer;
   flex-flow: column;
+	overflow: hidden;
 }
 
 .prof-img .the-camera-icon {
@@ -244,7 +245,14 @@ textarea.form-control:focus, input.form-control:focus, .chips:focus {
 }
 
 .btn2:hover::before {
-  height: 180%;
+  height: 200%;
+}
+
+#prof-picture{
+	height:auto;
+	
+	display: none;
+	width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
