@@ -8,6 +8,11 @@
 body {
   /*	font-family: 'Segoe Pro Regular';*/
   color: white !important;
+  background: #F67615;
+}
+
+label {
+  color: white !important;
 }
 
 /** {
@@ -117,12 +122,47 @@ h2 {
   font-size: 14px;
 }
 
-form textarea, input {
-  padding: 7px 15px;
+textarea.form-control, input.form-control, .input-field {
+  box-sizing: border-box !important;
+  padding: 1em !important;
+  font-size: 1em !important;
   fill: rgba(255, 255, 255, 0.071);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.7) !important;
   border: 1px solid rgba(255, 255, 255, 64%);
+  border-radius: 0;
+  height: auto !important;
   color: #595a5c;
+}
+
+textarea.form-control:focus, input.form-control:focus, .chips:focus {
+  border-bottom: 1px solid #595a5c !important;
+  box-shadow: 0 1px 0 0 #595a5c !important;
+  -webkit-box-shadow: 0 1px 0 0 #595a5c !important;
+  outline: none !important;
+}
+
+.chips {
+  min-height: auto;
+  padding: 0;
+}
+
+.chips .input {
+  height: auto;
+  line-height: normal;
+  font-size: 1em;
+}
+
+.chips .input::placeholder {
+  color: #858588;
+}
+
+.form-control:focus {
+  border-color: white;
+}
+
+.prof-img {
+  position: fixed;
+  z-index: 10;
 }
 
 .prof-img label, .prof-img .the-camera-icon {
@@ -167,7 +207,7 @@ form textarea, input {
   top: 1%;
 }
 
-.btn {
+.btn2 {
   border: 1px solid white;
   background: none;
   padding: 10px;
@@ -182,12 +222,12 @@ form textarea, input {
   border-radius: 0;
 }
 
-.btn:hover {
+.btn2:hover {
   border-color: #595A5C;
   color: white;
 }
 
-.btn::before {
+.btn2::before {
   content: "";
   position: absolute;
   left: 0;
@@ -198,36 +238,55 @@ form textarea, input {
   transition: 0.8s;
 }
 
-.btn::before {
+.btn2::before {
   bottom: 0;
   border-radius: 50% 50% 0 0;
 }
 
-.btn:hover::before {
+.btn2:hover::before {
   height: 180%;
 }
 
-@media(max-width:776px) {
-  .profile-container {
-    width: 100%;
+@media only screen and (max-width: 768px) {
+  .prof-img {
+    top: 18.5%;
+  }
+  .prof-img label, .prof-img .the-camera-icon {
+    width: 150px;
     height: 150px;
-    /* width: 200px; */
-    position: relative;
-    margin-bottom: 60px;
   }
-  h2 {
-    font-size: 34px;
-    color: #595a5c;
-    font-weight: 600;
-  }
-  .the-row {
-    padding: 15px;
+  .the-form {
+    background: rgba(246, 119, 45, 70%);
   }
 }
 
-@media(max-width:990px) {
-  .profile-container {
-    width: 100%;
-    height: 180px;
+@media only screen and (max-width: 425px) {
+  .prof-img label, .prof-img .the-camera-icon {
+    width: 120px;
+    height: 120px;
+  }
+  .greetings-img img {
+    left: -40%;
+    opacity: 0.6;
+  }
+  .form-container {
+    position: absolute;
+    top: 5.5em;
+    left: 0;
+  }
+  .prof-img {
+    position: relative;
+    top: auto;
+    bottom: 0;
+  }
+  h2 {
+    font-size: 48px;
+    text-align: right;
+    width: 50%;
+    margin-left: 45%;
+  }
+  .the-camera-icon svg {
+    width: 60px;
+    height: 60px;
   }
 }

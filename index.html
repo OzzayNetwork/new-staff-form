@@ -7,77 +7,76 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 	</head>
 
 	<body>
 		<section class="container-fluid the-container p-5">
 			<div class="row the-row">
-				<div class="col-lg-6 greet-img h-100">
+				<div class="col-12 col-md-3 col-lg-4 col-xl-6 greet-img h-100">
 					<div class="prof-img">
 						<label class="the-img" for="my-picture">
-						<div class="the-camera-icon">
-							<i data-feather="camera"></i>
-							<p class="text-capitalize">upload your picture</p>
-						</div>
-					</label>
+							<div class="the-camera-icon">
+								<i data-feather="camera"></i>
+								<p class="text-capitalize">upload your picture</p>
+							</div>
+						</label>
 					</div>
 					<div class="greetings-img h-75">
 						<img src="css/img/bg.svg">
 					</div>
 				</div>
-				<div class="col-lg-6 form-container">
+				<div class="col-12 col-md-9 col-lg-8 col-xl-6 form-container">
 					<div class="title-container">
-						<h2 class="text-capitalize">Welcome abord</h2>
-						<p class="paragraph">Hello there, We at Nouveta LTD would love to welcome you into the Veta family. With that being said, we would love to know some professional & fun facts about you. Kindly feel the form bellow completely and correctly. Feel at home. Welcome once
-							more
+						<h2 class="text-capitalize">Welcome aboard</h2>
+						<p class="paragraph">Hi! We at Nouveta LTD would love to welcome you into the Veta family. With that being said, we would love to know some professional &amp; fun facts about you. Kindly fill the form below. Feel at home and welcome once again.
 						</p>
-						<div class="the-form p-5">
+						<div class="the-form p-md-5 px-5">
 							<form>
 								<div class="row">
-									<div class="form-group col-12 m-0 p-0 d-flex">
-										<div class="col-lg-7 d-flex flex-column">
-											<label>Your Names</label>
-											<input type="text" placeholder="Enter your official names" autofocus class="">
-										</div>
-										<div class="col-lg-5 d-flex flex-column">
-											<label>Your Alias/Nickname</label>
-											<input type="text" placeholder="Enter your AKA" class="">
-										</div>
+									<div class="col-12 col-md-6">
+										<label>Your Names</label>
+										<input type="text" placeholder="What are your official names?" autofocus class="form-control">
 									</div>
-
-									<div class="col-12  d-flex flex-column">
-										<label>Tell us something brief about yourself</label>
-										<textarea rows="4" cols="50" name="comment" form="usrform" placeholder="About Me ..."></textarea>
+									<div class="col-12 col-md-6">
+										<label>Your Alias/Nickname</label>
+										<input type="text" placeholder="What other name(s) do you go by?" class="form-control">
 									</div>
-
-									<div class="col-12  d-flex flex-column">
-										<label>What's Unique About You?</label>
-										<textarea rows="3" cols="50" name="comment" form="usrform" placeholder="Unique fact about me ..."></textarea>
-									</div>
-
-									<div class="col-12  d-flex flex-column mb-2">
-										<label>What's Interesting About You?</label>
-										<textarea rows="3" cols="50" name="comment" form="usrform" placeholder="Interesting fact about me ..."></textarea>
+								</div>
+								<div class="row">
+									<div class="col-12">
+										<label>Tell us something small about yourself</label>
+										<textarea rows="4" cols="50" name="comment" form="usrform" class="form-control" placeholder="About Me ..."></textarea>
 									</div>
 
 									<div class="col-12">
+										<label>What is something unique about you?</label>
+										<textarea rows="3" cols="50" name="comment" form="usrform" class="form-control" placeholder="Unique fact about me ..."></textarea>
+									</div>
+									<div class="col-12 mb-2">
+										<label>What are some interesting facts about you?</label>
+										<textarea rows="3" cols="50" name="comment" form="usrform" class="form-control" placeholder="Interesting fact about me ..."></textarea>
+									</div>
+									<div class="col-12">
 										<p>For this section, enter at least three skills and at lead four items on the interests and hobbies section. remember to press enter once you are done with entering an item into the text box. </p>
 									</div>
-
-									<div class="col-12  d-flex flex-column mb-2">
+									<div class="col-12 mb-2">
 										<label>My Skills</label>
-										<input type="text" placeholder="Press Enter after feeding in a skill">
+										<div class="chips chips-placeholder-skills"></div>
 									</div>
-
-									<div class="col-12  d-flex flex-column mb-2">
+									<div class="col-12 mb-2">
 										<label>Interests and Hobbies</label>
-										<input type="text" placeholder="Press Enter after feeding in a hobby or skill">
+										<div class="chips chips-placeholder"></div>
 										<input type="file" id="my-picture" class="d-none">
 									</div>
 									<div class="col-12 d-flex flex-column mb-2 mt-3">
-										<button class="btn btn2">SUBMIT</button>
+										<button class="btn2">SUBMIT</button>
 									</div>
 								</div>
 							</form>
@@ -89,9 +88,18 @@
 
 		<!--	script-->
 
-		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
 		<script>
 			feather.replace()
+			$('.chips').chips();
+			$('.chips-placeholder-skills').chips({
+				placeholder: 'Enter a Skill',
+				secondaryPlaceholder: '+ Skill',
+			});
+			$('.chips-placeholder').chips({
+				placeholder: 'Enter a hobby',
+				secondaryPlaceholder: '+ Hobby',
+			});
 		</script>
 		<!--	script-->
 	</body>
