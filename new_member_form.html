@@ -42,7 +42,7 @@
               </div>
               <div class="col-12 col-md-6">
                 <label>Your Alias/Nickname</label>
-                <input type="text" placeholder="What other name(s) do you go by?" class="form-control">
+                <input type="text" data-role="tagsinput" placeholder="What other name(s) do you go by?" class="form-control">
               </div>
             </div>
             <div class="row">
@@ -94,6 +94,18 @@
 				placeholder: 'Enter a hobby',
 				secondaryPlaceholder: '+ Hobby',
 			});
+	
+		var skills_data=new Array();
+        skills_data=$('.chips-placeholder-skills').material_chip('data');
+
+		var hobby_data=new Array();
+        skills_data=$('.chips-placeholder').material_chip('data');
+
+       $("#chips-click").on('click', function(){
+        console.log(skills_data[0].tag);
+		    console.log(hobby_data[i].tag);
+       
+       });
 		</script> 
 <!--	script--> 
 
@@ -109,6 +121,9 @@ image.src=data.target.result;
 obj.readAsDataURL(this.files[0]);
 }
 }
+	
+	$("input").val();
+	$("input").tagsinput('items');
 
 </script>
 </body>
